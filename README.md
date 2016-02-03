@@ -1,2 +1,2 @@
-# Gregor-site
-# Gregor-site
+# Gregor-site, not finished.
+Sass, html, JS.

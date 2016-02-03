@@ -147,7 +147,7 @@ body {
             color: white;
           }
           100% {
-            width: 600px;
+            width: auto;
           }
         }
       }
@@ -220,13 +220,12 @@ body {
         display: none;
         position: absolute;
         border: 2px solid #995253;
-        top: -100px;
+        top: 0;
+        right: -50%; // pseudoelement wypozycjonowany na środku elementu relatywnego
         background: white;
         width: 900px;
-        height: 1000px;
         z-index: 2;
         opacity: 0.9;
-        overflow: scroll;
         border-radius: 10px;
         animation: easeInCubic 1s;
         @keyframes easeInCubic {
@@ -237,7 +236,6 @@ body {
           }
           100% {
             transition-timing-function: cubic-bezier(0.705, 0.220, 0.495, 0.640);
-            height: 100%;
           }
         }
       }
