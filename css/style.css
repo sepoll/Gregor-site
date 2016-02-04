@@ -1093,14 +1093,14 @@ body {
       width: 380px; }
       .main .cf .logo h1 {
         font-family: Poiret One;
-        color: #995253;
+        color: #444;
         font-size: 60px; }
         .main .cf .logo h1 span {
           font-weight: bolder; }
     .main .cf .hamburger {
       display: none; }
   .main .menu {
-    background: #995253;
+    background: grey;
     border-radius: 10px 0 10px 0; }
     .main .menu ul {
       padding: 5px; }
@@ -1132,8 +1132,8 @@ body {
 
 .band {
   width: 100%;
-  height: 5px;
-  background: #995253; }
+  height: 2px;
+  background: #444; }
 
 .pomoc {
   background: url("../images/home-banner.jpg") no-repeat;
@@ -1346,9 +1346,24 @@ footer div {
   padding-right: 250px;
   margin: 0 auto;
   width: 1100px; }
-  .komu_pomagam h2 {
-    font-size: 40px; }
-  .komu_pomagam p {
-    font-size: 25px; }
+  .komu_pomagam div {
+    box-shadow: 8px 8px 5px #888888;
+    padding-right: 40px; }
+    .komu_pomagam div h2 {
+      font-family: times, Times New Roman, times-roman, georgia, serif;
+      color: #444;
+      margin: 0;
+      padding: 0px 0px 6px 0px;
+      font-size: 51px;
+      line-height: 44px;
+      letter-spacing: -2px;
+      font-weight: bold; }
+    .komu_pomagam div p {
+      font-family: georgia,serif;
+      color: #381704;
+      font-size: 20px;
+      font-weight: normal;
+      line-height: 150%;
+      padding: 0px; }
 
 /*# sourceMappingURL=style.css.map */
