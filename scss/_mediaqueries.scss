@@ -1,17 +1,954 @@
-@mixin breakpoint($media) {
-  @if $media == small {
-    @media only screen and (max-width: 480px) { @content; }
+@media screen and(max-width: 1024px) {
+  body {
+    width: 100%;
+    .main {
+      width: 100%;
+      .cf {
+        .logo {
+          width: 100%;
+        }
+        .ham-div {
+
+          .hamburger {
+            display: none;
+          }
+          .menu {
+            display: inline-block;
+            text-align: center;
+            padding: 5px;
+            width: 100%;
+          }
+        }
+      }
+    }
+    .pomoc {
+      width: 100%;
+      .article {
+        width: 100%;
+      }
+    }
   }
-   @else if $media == medium {
-    @media only screen and (min-width: 481px) and (max-width: 880px) { @content; }
+}
+
+@media only screen and (max-width: 800px) {
+
+  body {
+    margin: 0 auto;
+    padding: 0;
+
+    .main {
+      padding: 3%;
+      margin: 0 auto;
+      .cf {
+        width: 100%;
+        padding: 0 3% 0 15%;
+        .logo {
+          width: 90%;
+          h1 {
+            width: 95%;
+            font-size: 200%;
+            font-weight: bold;
+            text-align: center;
+
+            span {
+              width: 70%;
+              font-size: 250%;
+            }
+            .oblique {
+              font-size: 150%;
+            }
+          }
+        }
+        .ham-div {
+          width: 95%;
+          .hamburger {
+            display: none;
+            &:hover {
+              color: #66a992;
+            }
+          }
+          .menu {
+            display: inline-block;
+            background: #730;
+            border-radius: 10px 0 10px 0;
+            width: 100%;
+            text-align: center;
+            ul {
+              text-align: center;
+              display: inline-block;
+              width: 95%;
+              padding-right: 0px;
+              padding-left: 0px;
+              margin-top: 0px;
+              margin-bottom: 0px;
+              li {
+                display: inline-block;
+                margin: 0 1% 0 1%;
+                float: left;
+                list-style: none;
+                font-size: 80%;
+                &:last-child {
+                  margin-right: 0;
+                }
+                a {
+                  color: white;
+                  font-size: 1.5em;
+                  text-decoration: none;
+                  position: relative;
+                  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+                  transition: color linear 0.15s;
+                  &:hover {
+                    text-decoration: none;
+                    color: #66a992;
+                  }
+                  &:before {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 2px;
+                    bottom: 0;
+                    left: 0;
+                    background-color: white;
+                    visibility: hidden;
+                    -webkit-transform: scaleX(0);
+                    transform: scaleX(0);
+                    -webkit-transition: all 0.3s ease-in-out 0s;
+                    transition: all 0.3s ease-in-out 0s;
+                  }
+                  &:hover:before {
+                    visibility: visible;
+                    -webkit-transform: scaleX(1);
+                    transform: scaleX(1);
+                  }
+                  .current-item a {
+                    text-decoration: none;
+                    color: #66a992;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .band {
+      width: 100%;
+    }
+    .pomoc {
+      width: 100%;
+      background: url("../images/home-banner800px.jpg") no-repeat;
+      background-size: 110%;
+      background-position: right;
+      padding: 0;
+
+      .article {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+        display: inline-block;
+        div {
+          width: 95%;
+          margin: 0;
+          padding: 1% 0 0 3%;
+          h2 {
+            width: 90%;
+            font-size: 100%;
+            padding: 1% 0 0 5%;
+            margin-left: 0%;
+          }
+          p {
+            text-indent: 2%;
+            width: 45%;
+            font-size: 90%;
+            margin:0;
+          }
+      a {
+        text-decoration: none;
+        text-align: left;
+        float: right;
+        color: #995253;
+        margin: 0;
+        position: relative;
+        width: 70%;
+      }
+    }
+
   }
-   @else if $media == medium2 {
-    @media only screen and (min-width: 481px) and (max-width: 760px) { @content; }
+}
+.zasady {
+  width: 100%;
+  padding: 0;
+  display: inline-block;
+  margin: 0;
+  .article {
+    margin-right: 0;
+    width: 100%;
+    div {
+      margin: 0;
+      padding:0 0 1% 0;
+      h2 {
+        width: 95%;
+        font-size: 100%;
+        padding: 1% 0 0 5%;
+        margin-left: 0%;
+      }
+      p {
+        text-indent: 2%;
+        width: 90%;
+        font-size: 90%;
+        text-align: justify;
+
+      }
+      a {
+        width: 50%;
+        text-decoration: none;
+        text-align: center;
+        float: right;
+        color: #995253;
+        margin: 0;
+        position: relative;
+      }
+    }
   }
-  @else if $media == medium3 {
-    @media only screen and (min-width: 481px) and (max-width: 860px) { @content; }
+}
+.komu {
+  background: #3caee0 url("../images/testimonial.jpg") no-repeat right top;
+  background-size: 85%;
+  width: 100%;
+  display: inline-block;
+  padding: 0;
+  .article {
+    margin-left: 0;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-right: 0;
+    width: 50%;
+    display: inline-block;
+    div {
+      width: 100%;
+      h2 {
+        width: 90%;
+        font-size: 100%;
+        padding: 1% 0 0 5%;
+        margin-left: 0%;
+      }
+      p {
+        text-indent: 2%;
+        width: 90%;
+        font-size: 95%;
+
+      }
+      a {
+        width: 50%;
+        text-decoration: none;
+        text-align: center;
+        float: right;
+        color: #995253;
+        margin: 0;
+        position: relative;
+      }
+    }
   }
-   @else if $media == wide {
-    @media only screen and (min-width: 481px) and (max-width: 1165px) { @content; }
+}
+.kontakt {
+  width: 100%;
+  div {
+    width: 100%;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+    img {
+      width: 10%;
+      padding: 0 1% 0 1%;
+    }
   }
- }
+
+}
+footer {
+  div {
+    h4 {
+      margin: 0;
+      font-size: 110%;
+      padding-left: 5%;
+    }
+  }
+
+}
+
+}
+}
+
+@media only screen and (max-width: 768px) {
+body {
+margin: 0 auto;
+padding: 0;
+
+.main {
+  padding: 3%;
+  margin: 0 auto;
+  .cf {
+    width: 100%;
+    padding: 0 3% 0 15%;
+    .logo {
+      width: 90%;
+      h1 {
+        width: 95%;
+        font-size: 200%;
+        font-weight: bold;
+        text-align: center;
+
+        span {
+          width: 70%;
+          font-size: 250%;
+        }
+        .oblique {
+          font-size: 150%;
+        }
+      }
+    }
+    .ham-div {
+      width: 95%;
+      .hamburger {
+        display: none;
+        &:hover {
+          color: #66a992;
+        }
+      }
+      .menu {
+        display: inline-block;
+        background: #730;
+        border-radius: 10px 0 10px 0;
+        width: 100%;
+        text-align: center;
+        ul {
+          text-align: center;
+          display: inline-block;
+          width: 95%;
+          padding-right: 0px;
+          padding-left: 0px;
+          margin-top: 0px;
+          margin-bottom: 0px;
+          li {
+            display: inline-block;
+            margin: 0 1% 0 1%;
+            float: left;
+            list-style: none;
+            font-size: 80%;
+            &:last-child {
+              margin-right: 0;
+            }
+            a {
+              color: white;
+              font-size: 1.5em;
+              text-decoration: none;
+              position: relative;
+              text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+              transition: color linear 0.15s;
+              &:hover {
+                text-decoration: none;
+                color: #66a992;
+              }
+              &:before {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                bottom: 0;
+                left: 0;
+                background-color: white;
+                visibility: hidden;
+                -webkit-transform: scaleX(0);
+                transform: scaleX(0);
+                -webkit-transition: all 0.3s ease-in-out 0s;
+                transition: all 0.3s ease-in-out 0s;
+              }
+              &:hover:before {
+                visibility: visible;
+                -webkit-transform: scaleX(1);
+                transform: scaleX(1);
+              }
+              .current-item a {
+                text-decoration: none;
+                color: #66a992;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.band {
+  width: 100%;
+}
+.pomoc {
+  width: 100%;
+  background: lightgray;
+  padding: 0;
+
+  .article {
+    margin-left: 0;
+    padding-right: 3%;
+    margin-right: 0;
+    width: 100%;
+    display: inline-block;
+    div {
+      width: 100%;
+      margin: 0;
+      h2 {
+        width: 90%;
+        font-size: 100%;
+        padding: 1% 0 0 5%;
+        margin-left: 0%;
+      }
+      p {
+        text-indent: 2%;
+        width: 90%;
+        font-size: 90%;
+        text-align: justify;
+
+      }
+      a {
+        text-decoration: none;
+        text-align: center;
+        float: right;
+        color: #995253;
+        margin: 0;
+        position: relative;
+        width: 50%;
+      }
+    }
+
+  }
+}
+.zasady {
+  width: 100%;
+  padding: 0;
+  display: inline-block;
+  vertical-align: inherit;
+  .article {
+    margin-left: 0;
+    padding-left: 5%;
+    padding-right: 3%;
+    margin-right: 0;
+    width: 100%;
+    display: block;
+    div {
+      width: 100%;
+      margin: 0;
+      h2 {
+        width: 90%;
+        font-size: 100%;
+        padding: 1% 0 0 5%;
+        margin-left: 0%;
+      }
+      p {
+        text-indent: 2%;
+        width: 90%;
+        font-size: 90%;
+        text-align: justify;
+
+      }
+      a {
+        width: 50%;
+        text-decoration: none;
+        text-align: center;
+        float: right;
+        color: #995253;
+        margin: 0;
+        position: relative;
+      }
+    }
+  }
+}
+.komu {
+  width: 100%;
+  display: inline-block;
+  padding: 0;
+  background: lightgray;
+  .article {
+    margin-left: 0;
+    padding-left: 5%;
+    padding-right: 3%;
+    margin-right: 0;
+    width: 100%;
+    display: inline-block;
+    div {
+      width: 100%;
+      h2 {
+        width: 90%;
+        font-size: 100%;
+        padding: 1% 0 0 5%;
+        margin-left: 0%;
+      }
+      p {
+        text-indent: 2%;
+        width: 90%;
+        font-size: 90%;
+        text-align: justify;
+
+      }
+      a {
+        width: 50%;
+        text-decoration: none;
+        text-align: center;
+        float: right;
+        color: #995253;
+        margin: 0;
+        position: relative;
+      }
+    }
+  }
+}
+.kontakt {
+  width: 100%;
+  div {
+    width: 100%;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+    img {
+      width: 15%;
+      padding: 0 1% 0 1%;
+    }
+  }
+
+}
+footer {
+  div {
+    h4 {
+      margin: 0;
+      font-size: 110%;
+      padding-left: 5%;
+    }
+  }
+
+}
+}
+}
+
+@media only screen and (max-width: 600px) {
+body {
+margin: 0 auto;
+padding: 0;
+
+.main {
+  padding: 3%;
+  margin: 0 auto;
+  .cf {
+    width: 100%;
+    padding: 0 3% 0 15%;
+    .logo {
+      width: 90%;
+      h1 {
+        width: 90%;
+        font-size: 200%;
+        font-weight: bold;
+        span {
+          width: 70%;
+          font-size: 250%;
+        }
+        .oblique {
+          font-size: 150%;
+        }
+      }
+    }
+    .ham-div {
+      width: 50%;
+      position: relative;
+      display: inline-block;
+
+      .hamburger {
+        display: block;
+        background: #740;
+        top: 0;
+        left: 0;//tutaj zmieniłem
+        padding: 0 15px 0 15px;
+        color: #fff;
+        border: 0;
+        font-size: 1em;
+        cursor: pointer;
+        outline: none;
+        width: 50px;
+        height: 50px;
+        position: fixed;
+        z-index: 9;
+        border-radius: 20%;
+
+      }
+      .menu {
+        display: block;
+        left: 0;
+        top: 0;
+        position: fixed;
+        width: 40%;
+        border-radius: 0 0 5px 5px;
+        background: #741;
+
+        ul {
+          display: block;
+
+          li {
+            color: #fff;
+            display: inline-block;
+            line-height: 3;
+            width: 100%;
+
+            a {
+              font-size: 1em;
+              color: #fff;
+              display: inline-block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.band {
+  width: 100%;
+}
+.pomoc {
+  width: 100%;
+  background: lightgray;
+  padding: 0;
+
+  .article {
+    margin-left: 0;
+    padding-right: 3%;
+    margin-right: 0;
+    width: 100%;
+    display: inline-block;
+    div {
+      width: 100%;
+      margin: 0;
+      h2 {
+        width: 90%;
+        font-size: 100%;
+        padding: 1% 0 0 5%;
+        margin-left: 0%;
+      }
+      p {
+        text-indent: 2%;
+        width: 90%;
+        font-size: 90%;
+        text-align: justify;
+
+      }
+      a {
+        text-decoration: none;
+        text-align: center;
+        float: right;
+        color: #995253;
+        margin: 0;
+        position: relative;
+        width: 50%;
+      }
+    }
+
+  }
+}
+.zasady {
+  width: 100%;
+  padding: 0;
+  display: inline-block;
+  vertical-align: inherit;
+  .article {
+    margin-left: 0;
+    padding-left: 5%;
+    padding-right: 3%;
+    margin-right: 0;
+    width: 100%;
+    display: block;
+    div {
+      width: 100%;
+      margin: 0;
+      h2 {
+        width: 90%;
+        font-size: 100%;
+        padding: 1% 0 0 5%;
+        margin-left: 0%;
+      }
+      p {
+        text-indent: 2%;
+        width: 90%;
+        font-size: 90%;
+        text-align: justify;
+
+      }
+      a {
+        width: 50%;
+        text-decoration: none;
+        text-align: center;
+        float: right;
+        color: #995253;
+        margin: 0;
+        position: relative;
+      }
+    }
+  }
+}
+.komu {
+  width: 100%;
+  display: inline-block;
+  padding: 0;
+  background: lightgray;
+  .article {
+    margin-left: 0;
+    padding-left: 5%;
+    padding-right: 3%;
+    margin-right: 0;
+    width: 100%;
+    display: inline-block;
+    div {
+      width: 100%;
+      h2 {
+        width: 90%;
+        font-size: 100%;
+        padding: 1% 0 0 5%;
+        margin-left: 0%;
+      }
+      p {
+        text-indent: 2%;
+        width: 90%;
+        font-size: 90%;
+        text-align: justify;
+
+      }
+      a {
+        width: 50%;
+        text-decoration: none;
+        text-align: center;
+        float: right;
+        color: #995253;
+        margin: 0;
+        position: relative;
+      }
+    }
+  }
+}
+.kontakt {
+  width: 100%;
+  div {
+    width: 100%;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+    img {
+      width: 15%;
+      padding: 0 1% 0 1%;
+    }
+  }
+
+}
+footer {
+  div {
+    h4 {
+      margin: 0;
+      font-size: 110%;
+      padding-left: 5%;
+    }
+  }
+
+}
+
+}
+}
+
+@media screen and (max-width: 480px) {
+body {
+margin: 0 auto;
+padding: 0;
+.main {
+  padding: 3%;
+  margin: 0 auto;
+  .cf {
+    width: 100%;
+    padding: 0 3% 0 15%;
+    .logo {
+      width: 90%;
+      h1 {
+        width: 90%;
+        font-size: 200%;
+        font-weight: bold;
+        span {
+          width: 70%;
+          font-size: 200%;
+        }
+        .oblique {
+          font-size: 150%;
+        }
+      }
+    }
+    .ham-div {
+      width: 50%;
+      position: relative;
+      display: inline-block;
+
+      .hamburger {
+        display: block;
+        background: #740;
+        top: 0;
+        left: 0; //tutaj zmnieniłem
+        padding: 0 15px 0 15px;
+        color: #fff;
+        border: 0;
+        font-size: 1em;
+        cursor: pointer;
+        outline: none;
+        width: 50px;
+        height: 50px;
+        position: fixed;
+        z-index: 9;
+        border-radius: 20%;
+
+      }
+      .menu {
+        display: block;
+        left: 0;
+        top: 0;
+        position: fixed;
+        width: 40%;
+        border-radius: 0 0 5px 5px;
+        background: #741;
+
+        ul {
+          display: block;
+
+          li {
+            color: #fff;
+            display: inline-block;
+            line-height: 3;
+            width: 100%;
+
+            a {
+              font-size: 1em;
+              color: #fff;
+              display: inline-block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.band {
+  width: 100%;
+}
+.pomoc {
+  width: 100%;
+  background: lightgray;
+  padding: 0;
+
+  .article {
+    margin-left: 0;
+    padding-left: 5%;
+    padding-right: 3%;
+    margin-right: 0;
+    width: 100%;
+    display: inline-block;
+    div {
+      width: 100%;
+      margin: 0;
+      h2 {
+        width: 90%;
+        font-size: 100%;
+        margin-right: 10%;
+      }
+      p {
+        width: 90%;
+        font-size: 90%;
+        text-align: justify;
+      }
+      a {
+        width: 50%;
+      }
+    }
+  }
+}
+.zasady {
+  width: 100%;
+  display: inline-block;
+  vertical-align: inherit;
+  padding: 0;
+  .article {
+    margin-left: 0;
+    padding-left: 5%;
+    padding-right: 3%;
+    margin-right: 0;
+    width: 100%;
+    display: inline-block;
+    div {
+      width: 100%;
+      margin: 0;
+      h2 {
+        width: 90%;
+        font-size: 100%;
+        margin-right: 10%;
+      }
+      p {
+        width: 90%;
+        font-size: 90%;
+        text-align: justify;
+      }
+      a {
+        width: 50%;
+      }
+    }
+  }
+}
+.komu {
+  width: 100%;
+  display: inline-block;
+  padding: 0;
+  background: lightgray;
+  .article {
+    width: 100%;
+    div {
+      width: 100%;
+      h2 {
+        width: 90%;
+        font-size: 100%;
+        ///margin-right: 10%;
+      }
+      p {
+        width: 90%;
+        font-size: 90%;
+        text-align: justify;
+        margin-right: 0;
+
+      }
+      a {
+        width: 50%;
+      }
+    }
+  }
+}
+.kontakt {
+  width: 100%;
+  div {
+    width: 100%;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+    img {
+      width: 15%;
+      padding: 0 1% 0 1%;
+    }
+  }
+
+}
+footer {
+  div {
+    h4 {
+      margin: 0;
+      font-size: 90%;
+      padding-left: 5%;
+    }
+  }
+
+}
+
+}
+
+}

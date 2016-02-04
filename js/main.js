@@ -20,3 +20,30 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   };
 });
+$(document).ready(function() {
+	$(window).on('scroll', function () {
+		var navBarTop = $('.my-skills').offset().top;
+		var scrollPosition = $(window).scrollTop();
+		if (scrollPosition > navBarTop) {
+			$('.skillbar').each(function () {
+				$(this).find('.skillbar-bar').animate({
+					width: $(this).attr('data-percent')
+				}, 3000);
+			});
+		}
+	});
+
+
+	$('.circle').mouseenter(function () {
+		$(this).addClass("animated bounce");
+	});
+
+	//hamburger menu
+	//$(".menu").show();
+	$(".hamburger").click(function () {
+		$(".menu").slideToggle("slow", function () {
+			$(".hamburger").show(".menu");
+
+		});
+	});
+});

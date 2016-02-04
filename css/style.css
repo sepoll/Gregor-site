@@ -359,6 +359,722 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+@media screen and (max-width: 1024px) {
+  body {
+    width: 100%; }
+    body .main {
+      width: 100%; }
+      body .main .cf .logo {
+        width: 100%; }
+      body .main .cf .ham-div .hamburger {
+        display: none; }
+      body .main .cf .ham-div .menu {
+        display: inline-block;
+        text-align: center;
+        padding: 5px;
+        width: 100%; }
+    body .pomoc {
+      width: 100%; }
+      body .pomoc .article {
+        width: 100%; } }
+@media only screen and (max-width: 800px) {
+  body {
+    margin: 0 auto;
+    padding: 0; }
+    body .main {
+      padding: 3%;
+      margin: 0 auto; }
+      body .main .cf {
+        width: 100%;
+        padding: 0 3% 0 15%; }
+        body .main .cf .logo {
+          width: 90%; }
+          body .main .cf .logo h1 {
+            width: 95%;
+            font-size: 200%;
+            font-weight: bold;
+            text-align: center; }
+            body .main .cf .logo h1 span {
+              width: 70%;
+              font-size: 250%; }
+            body .main .cf .logo h1 .oblique {
+              font-size: 150%; }
+        body .main .cf .ham-div {
+          width: 95%; }
+          body .main .cf .ham-div .hamburger {
+            display: none; }
+            body .main .cf .ham-div .hamburger:hover {
+              color: #66a992; }
+          body .main .cf .ham-div .menu {
+            display: inline-block;
+            background: #730;
+            border-radius: 10px 0 10px 0;
+            width: 100%;
+            text-align: center; }
+            body .main .cf .ham-div .menu ul {
+              text-align: center;
+              display: inline-block;
+              width: 95%;
+              padding-right: 0px;
+              padding-left: 0px;
+              margin-top: 0px;
+              margin-bottom: 0px; }
+              body .main .cf .ham-div .menu ul li {
+                display: inline-block;
+                margin: 0 1% 0 1%;
+                float: left;
+                list-style: none;
+                font-size: 80%; }
+                body .main .cf .ham-div .menu ul li:last-child {
+                  margin-right: 0; }
+                body .main .cf .ham-div .menu ul li a {
+                  color: white;
+                  font-size: 1.5em;
+                  text-decoration: none;
+                  position: relative;
+                  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+                  transition: color linear 0.15s; }
+                  body .main .cf .ham-div .menu ul li a:hover {
+                    text-decoration: none;
+                    color: #66a992; }
+                  body .main .cf .ham-div .menu ul li a:before {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 2px;
+                    bottom: 0;
+                    left: 0;
+                    background-color: white;
+                    visibility: hidden;
+                    -webkit-transform: scaleX(0);
+                    transform: scaleX(0);
+                    -webkit-transition: all 0.3s ease-in-out 0s;
+                    transition: all 0.3s ease-in-out 0s; }
+                  body .main .cf .ham-div .menu ul li a:hover:before {
+                    visibility: visible;
+                    -webkit-transform: scaleX(1);
+                    transform: scaleX(1); }
+                  body .main .cf .ham-div .menu ul li a .current-item a {
+                    text-decoration: none;
+                    color: #66a992; }
+    body .band {
+      width: 100%; }
+    body .pomoc {
+      width: 100%;
+      background: url("../images/home-banner800px.jpg") no-repeat;
+      background-size: 110%;
+      background-position: right;
+      padding: 0; }
+      body .pomoc .article {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+        display: inline-block; }
+        body .pomoc .article div {
+          width: 95%;
+          margin: 0;
+          padding: 1% 0 0 3%; }
+          body .pomoc .article div h2 {
+            width: 90%;
+            font-size: 100%;
+            padding: 1% 0 0 5%;
+            margin-left: 0%; }
+          body .pomoc .article div p {
+            text-indent: 2%;
+            width: 45%;
+            font-size: 90%;
+            margin: 0; }
+          body .pomoc .article div a {
+            text-decoration: none;
+            text-align: left;
+            float: right;
+            color: #995253;
+            margin: 0;
+            position: relative;
+            width: 70%; }
+    body .zasady {
+      width: 100%;
+      padding: 0;
+      display: inline-block;
+      margin: 0; }
+      body .zasady .article {
+        margin-right: 0;
+        width: 100%; }
+        body .zasady .article div {
+          margin: 0;
+          padding: 0 0 1% 0; }
+          body .zasady .article div h2 {
+            width: 95%;
+            font-size: 100%;
+            padding: 1% 0 0 5%;
+            margin-left: 0%; }
+          body .zasady .article div p {
+            text-indent: 2%;
+            width: 90%;
+            font-size: 90%;
+            text-align: justify; }
+          body .zasady .article div a {
+            width: 50%;
+            text-decoration: none;
+            text-align: center;
+            float: right;
+            color: #995253;
+            margin: 0;
+            position: relative; }
+    body .komu {
+      background: #3caee0 url("../images/testimonial.jpg") no-repeat right top;
+      background-size: 85%;
+      width: 100%;
+      display: inline-block;
+      padding: 0; }
+      body .komu .article {
+        margin-left: 0;
+        padding-left: 3%;
+        padding-right: 3%;
+        margin-right: 0;
+        width: 50%;
+        display: inline-block; }
+        body .komu .article div {
+          width: 100%; }
+          body .komu .article div h2 {
+            width: 90%;
+            font-size: 100%;
+            padding: 1% 0 0 5%;
+            margin-left: 0%; }
+          body .komu .article div p {
+            text-indent: 2%;
+            width: 90%;
+            font-size: 95%; }
+          body .komu .article div a {
+            width: 50%;
+            text-decoration: none;
+            text-align: center;
+            float: right;
+            color: #995253;
+            margin: 0;
+            position: relative; }
+    body .kontakt {
+      width: 100%; }
+      body .kontakt div {
+        width: 100%;
+        margin: 0 auto;
+        color: #fff;
+        text-align: center; }
+        body .kontakt div img {
+          width: 10%;
+          padding: 0 1% 0 1%; }
+    body footer div h4 {
+      margin: 0;
+      font-size: 110%;
+      padding-left: 5%; } }
+@media only screen and (max-width: 768px) {
+  body {
+    margin: 0 auto;
+    padding: 0; }
+    body .main {
+      padding: 3%;
+      margin: 0 auto; }
+      body .main .cf {
+        width: 100%;
+        padding: 0 3% 0 15%; }
+        body .main .cf .logo {
+          width: 90%; }
+          body .main .cf .logo h1 {
+            width: 95%;
+            font-size: 200%;
+            font-weight: bold;
+            text-align: center; }
+            body .main .cf .logo h1 span {
+              width: 70%;
+              font-size: 250%; }
+            body .main .cf .logo h1 .oblique {
+              font-size: 150%; }
+        body .main .cf .ham-div {
+          width: 95%; }
+          body .main .cf .ham-div .hamburger {
+            display: none; }
+            body .main .cf .ham-div .hamburger:hover {
+              color: #66a992; }
+          body .main .cf .ham-div .menu {
+            display: inline-block;
+            background: #730;
+            border-radius: 10px 0 10px 0;
+            width: 100%;
+            text-align: center; }
+            body .main .cf .ham-div .menu ul {
+              text-align: center;
+              display: inline-block;
+              width: 95%;
+              padding-right: 0px;
+              padding-left: 0px;
+              margin-top: 0px;
+              margin-bottom: 0px; }
+              body .main .cf .ham-div .menu ul li {
+                display: inline-block;
+                margin: 0 1% 0 1%;
+                float: left;
+                list-style: none;
+                font-size: 80%; }
+                body .main .cf .ham-div .menu ul li:last-child {
+                  margin-right: 0; }
+                body .main .cf .ham-div .menu ul li a {
+                  color: white;
+                  font-size: 1.5em;
+                  text-decoration: none;
+                  position: relative;
+                  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+                  transition: color linear 0.15s; }
+                  body .main .cf .ham-div .menu ul li a:hover {
+                    text-decoration: none;
+                    color: #66a992; }
+                  body .main .cf .ham-div .menu ul li a:before {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 2px;
+                    bottom: 0;
+                    left: 0;
+                    background-color: white;
+                    visibility: hidden;
+                    -webkit-transform: scaleX(0);
+                    transform: scaleX(0);
+                    -webkit-transition: all 0.3s ease-in-out 0s;
+                    transition: all 0.3s ease-in-out 0s; }
+                  body .main .cf .ham-div .menu ul li a:hover:before {
+                    visibility: visible;
+                    -webkit-transform: scaleX(1);
+                    transform: scaleX(1); }
+                  body .main .cf .ham-div .menu ul li a .current-item a {
+                    text-decoration: none;
+                    color: #66a992; }
+    body .band {
+      width: 100%; }
+    body .pomoc {
+      width: 100%;
+      background: lightgray;
+      padding: 0; }
+      body .pomoc .article {
+        margin-left: 0;
+        padding-right: 3%;
+        margin-right: 0;
+        width: 100%;
+        display: inline-block; }
+        body .pomoc .article div {
+          width: 100%;
+          margin: 0; }
+          body .pomoc .article div h2 {
+            width: 90%;
+            font-size: 100%;
+            padding: 1% 0 0 5%;
+            margin-left: 0%; }
+          body .pomoc .article div p {
+            text-indent: 2%;
+            width: 90%;
+            font-size: 90%;
+            text-align: justify; }
+          body .pomoc .article div a {
+            text-decoration: none;
+            text-align: center;
+            float: right;
+            color: #995253;
+            margin: 0;
+            position: relative;
+            width: 50%; }
+    body .zasady {
+      width: 100%;
+      padding: 0;
+      display: inline-block;
+      vertical-align: inherit; }
+      body .zasady .article {
+        margin-left: 0;
+        padding-left: 5%;
+        padding-right: 3%;
+        margin-right: 0;
+        width: 100%;
+        display: block; }
+        body .zasady .article div {
+          width: 100%;
+          margin: 0; }
+          body .zasady .article div h2 {
+            width: 90%;
+            font-size: 100%;
+            padding: 1% 0 0 5%;
+            margin-left: 0%; }
+          body .zasady .article div p {
+            text-indent: 2%;
+            width: 90%;
+            font-size: 90%;
+            text-align: justify; }
+          body .zasady .article div a {
+            width: 50%;
+            text-decoration: none;
+            text-align: center;
+            float: right;
+            color: #995253;
+            margin: 0;
+            position: relative; }
+    body .komu {
+      width: 100%;
+      display: inline-block;
+      padding: 0;
+      background: lightgray; }
+      body .komu .article {
+        margin-left: 0;
+        padding-left: 5%;
+        padding-right: 3%;
+        margin-right: 0;
+        width: 100%;
+        display: inline-block; }
+        body .komu .article div {
+          width: 100%; }
+          body .komu .article div h2 {
+            width: 90%;
+            font-size: 100%;
+            padding: 1% 0 0 5%;
+            margin-left: 0%; }
+          body .komu .article div p {
+            text-indent: 2%;
+            width: 90%;
+            font-size: 90%;
+            text-align: justify; }
+          body .komu .article div a {
+            width: 50%;
+            text-decoration: none;
+            text-align: center;
+            float: right;
+            color: #995253;
+            margin: 0;
+            position: relative; }
+    body .kontakt {
+      width: 100%; }
+      body .kontakt div {
+        width: 100%;
+        margin: 0 auto;
+        color: #fff;
+        text-align: center; }
+        body .kontakt div img {
+          width: 15%;
+          padding: 0 1% 0 1%; }
+    body footer div h4 {
+      margin: 0;
+      font-size: 110%;
+      padding-left: 5%; } }
+@media only screen and (max-width: 600px) {
+  body {
+    margin: 0 auto;
+    padding: 0; }
+    body .main {
+      padding: 3%;
+      margin: 0 auto; }
+      body .main .cf {
+        width: 100%;
+        padding: 0 3% 0 15%; }
+        body .main .cf .logo {
+          width: 90%; }
+          body .main .cf .logo h1 {
+            width: 90%;
+            font-size: 200%;
+            font-weight: bold; }
+            body .main .cf .logo h1 span {
+              width: 70%;
+              font-size: 250%; }
+            body .main .cf .logo h1 .oblique {
+              font-size: 150%; }
+        body .main .cf .ham-div {
+          width: 50%;
+          position: relative;
+          display: inline-block; }
+          body .main .cf .ham-div .hamburger {
+            display: block;
+            background: #740;
+            top: 0;
+            left: 0;
+            padding: 0 15px 0 15px;
+            color: #fff;
+            border: 0;
+            font-size: 1em;
+            cursor: pointer;
+            outline: none;
+            width: 50px;
+            height: 50px;
+            position: fixed;
+            z-index: 9;
+            border-radius: 20%; }
+          body .main .cf .ham-div .menu {
+            display: block;
+            left: 0;
+            top: 0;
+            position: fixed;
+            width: 40%;
+            border-radius: 0 0 5px 5px;
+            background: #741; }
+            body .main .cf .ham-div .menu ul {
+              display: block; }
+              body .main .cf .ham-div .menu ul li {
+                color: #fff;
+                display: inline-block;
+                line-height: 3;
+                width: 100%; }
+                body .main .cf .ham-div .menu ul li a {
+                  font-size: 1em;
+                  color: #fff;
+                  display: inline-block; }
+    body .band {
+      width: 100%; }
+    body .pomoc {
+      width: 100%;
+      background: lightgray;
+      padding: 0; }
+      body .pomoc .article {
+        margin-left: 0;
+        padding-right: 3%;
+        margin-right: 0;
+        width: 100%;
+        display: inline-block; }
+        body .pomoc .article div {
+          width: 100%;
+          margin: 0; }
+          body .pomoc .article div h2 {
+            width: 90%;
+            font-size: 100%;
+            padding: 1% 0 0 5%;
+            margin-left: 0%; }
+          body .pomoc .article div p {
+            text-indent: 2%;
+            width: 90%;
+            font-size: 90%;
+            text-align: justify; }
+          body .pomoc .article div a {
+            text-decoration: none;
+            text-align: center;
+            float: right;
+            color: #995253;
+            margin: 0;
+            position: relative;
+            width: 50%; }
+    body .zasady {
+      width: 100%;
+      padding: 0;
+      display: inline-block;
+      vertical-align: inherit; }
+      body .zasady .article {
+        margin-left: 0;
+        padding-left: 5%;
+        padding-right: 3%;
+        margin-right: 0;
+        width: 100%;
+        display: block; }
+        body .zasady .article div {
+          width: 100%;
+          margin: 0; }
+          body .zasady .article div h2 {
+            width: 90%;
+            font-size: 100%;
+            padding: 1% 0 0 5%;
+            margin-left: 0%; }
+          body .zasady .article div p {
+            text-indent: 2%;
+            width: 90%;
+            font-size: 90%;
+            text-align: justify; }
+          body .zasady .article div a {
+            width: 50%;
+            text-decoration: none;
+            text-align: center;
+            float: right;
+            color: #995253;
+            margin: 0;
+            position: relative; }
+    body .komu {
+      width: 100%;
+      display: inline-block;
+      padding: 0;
+      background: lightgray; }
+      body .komu .article {
+        margin-left: 0;
+        padding-left: 5%;
+        padding-right: 3%;
+        margin-right: 0;
+        width: 100%;
+        display: inline-block; }
+        body .komu .article div {
+          width: 100%; }
+          body .komu .article div h2 {
+            width: 90%;
+            font-size: 100%;
+            padding: 1% 0 0 5%;
+            margin-left: 0%; }
+          body .komu .article div p {
+            text-indent: 2%;
+            width: 90%;
+            font-size: 90%;
+            text-align: justify; }
+          body .komu .article div a {
+            width: 50%;
+            text-decoration: none;
+            text-align: center;
+            float: right;
+            color: #995253;
+            margin: 0;
+            position: relative; }
+    body .kontakt {
+      width: 100%; }
+      body .kontakt div {
+        width: 100%;
+        margin: 0 auto;
+        color: #fff;
+        text-align: center; }
+        body .kontakt div img {
+          width: 15%;
+          padding: 0 1% 0 1%; }
+    body footer div h4 {
+      margin: 0;
+      font-size: 110%;
+      padding-left: 5%; } }
+@media screen and (max-width: 480px) {
+  body {
+    margin: 0 auto;
+    padding: 0; }
+    body .main {
+      padding: 3%;
+      margin: 0 auto; }
+      body .main .cf {
+        width: 100%;
+        padding: 0 3% 0 15%; }
+        body .main .cf .logo {
+          width: 90%; }
+          body .main .cf .logo h1 {
+            width: 90%;
+            font-size: 200%;
+            font-weight: bold; }
+            body .main .cf .logo h1 span {
+              width: 70%;
+              font-size: 200%; }
+            body .main .cf .logo h1 .oblique {
+              font-size: 150%; }
+        body .main .cf .ham-div {
+          width: 50%;
+          position: relative;
+          display: inline-block; }
+          body .main .cf .ham-div .hamburger {
+            display: block;
+            background: #740;
+            top: 0;
+            left: 0;
+            padding: 0 15px 0 15px;
+            color: #fff;
+            border: 0;
+            font-size: 1em;
+            cursor: pointer;
+            outline: none;
+            width: 50px;
+            height: 50px;
+            position: fixed;
+            z-index: 9;
+            border-radius: 20%; }
+          body .main .cf .ham-div .menu {
+            display: block;
+            left: 0;
+            top: 0;
+            position: fixed;
+            width: 40%;
+            border-radius: 0 0 5px 5px;
+            background: #741; }
+            body .main .cf .ham-div .menu ul {
+              display: block; }
+              body .main .cf .ham-div .menu ul li {
+                color: #fff;
+                display: inline-block;
+                line-height: 3;
+                width: 100%; }
+                body .main .cf .ham-div .menu ul li a {
+                  font-size: 1em;
+                  color: #fff;
+                  display: inline-block; }
+    body .band {
+      width: 100%; }
+    body .pomoc {
+      width: 100%;
+      background: lightgray;
+      padding: 0; }
+      body .pomoc .article {
+        margin-left: 0;
+        padding-left: 5%;
+        padding-right: 3%;
+        margin-right: 0;
+        width: 100%;
+        display: inline-block; }
+        body .pomoc .article div {
+          width: 100%;
+          margin: 0; }
+          body .pomoc .article div h2 {
+            width: 90%;
+            font-size: 100%;
+            margin-right: 10%; }
+          body .pomoc .article div p {
+            width: 90%;
+            font-size: 90%;
+            text-align: justify; }
+          body .pomoc .article div a {
+            width: 50%; }
+    body .zasady {
+      width: 100%;
+      display: inline-block;
+      vertical-align: inherit;
+      padding: 0; }
+      body .zasady .article {
+        margin-left: 0;
+        padding-left: 5%;
+        padding-right: 3%;
+        margin-right: 0;
+        width: 100%;
+        display: inline-block; }
+        body .zasady .article div {
+          width: 100%;
+          margin: 0; }
+          body .zasady .article div h2 {
+            width: 90%;
+            font-size: 100%;
+            margin-right: 10%; }
+          body .zasady .article div p {
+            width: 90%;
+            font-size: 90%;
+            text-align: justify; }
+          body .zasady .article div a {
+            width: 50%; }
+    body .komu {
+      width: 100%;
+      display: inline-block;
+      padding: 0;
+      background: lightgray; }
+      body .komu .article {
+        width: 100%; }
+        body .komu .article div {
+          width: 100%; }
+          body .komu .article div h2 {
+            width: 90%;
+            font-size: 100%; }
+          body .komu .article div p {
+            width: 90%;
+            font-size: 90%;
+            text-align: justify;
+            margin-right: 0; }
+          body .komu .article div a {
+            width: 50%; }
+    body .kontakt {
+      width: 100%; }
+      body .kontakt div {
+        width: 100%;
+        margin: 0 auto;
+        color: #fff;
+        text-align: center; }
+        body .kontakt div img {
+          width: 15%;
+          padding: 0 1% 0 1%; }
+    body footer div h4 {
+      margin: 0;
+      font-size: 90%;
+      padding-left: 5%; } }
 body {
   font-family: Poiret One, cursive; }
 
@@ -381,7 +1097,7 @@ body {
         font-size: 60px; }
         .main .cf .logo h1 span {
           font-weight: bolder; }
-    .main .cf .hamburger-menu {
+    .main .cf .hamburger {
       display: none; }
   .main .menu {
     background: #995253;
@@ -625,5 +1341,14 @@ body {
 footer div {
   margin: 0 auto;
   width: 400px; }
+
+.komu_pomagam {
+  padding-right: 250px;
+  margin: 0 auto;
+  width: 1100px; }
+  .komu_pomagam h2 {
+    font-size: 40px; }
+  .komu_pomagam p {
+    font-size: 25px; }
 
 /*# sourceMappingURL=style.css.map */
